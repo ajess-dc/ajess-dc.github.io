@@ -139,7 +139,7 @@ This file contains assignment 2 part 1, Mozilla Splash Page. (Add more to it)-->
         </a>
         <a href="https://addons.mozilla.org/">
           <img
-            srcset="Images/firefox-120px.png 120w, Images/firefox-addons-400px.png 400w"
+            srcset="Images/firefox-addons-120px.png 120w, Images/firefox-addons-400px.png 400w"
             sizes="(max-width: 500px) 120px, 400px"
             src="Images/firefox-addons-400px.jpg" alt="firefox addons logo">
         </a>
@@ -150,7 +150,10 @@ This file contains assignment 2 part 1, Mozilla Splash Page. (Add more to it)-->
       </div>
 
       <div class="red-panda">
-        <picture></picture>
+        <picture>
+          <source media="(max-width:600px)" srcset="Images/red-panda-600px.jpg">
+          <img src="Images/red-panda-1200px.jpg" alt="a red panada image">
+        </picture>
       </div>
 
     </main>
