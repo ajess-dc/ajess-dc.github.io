@@ -1,1 +1,3 @@
-File for Testing purposes
+File for Testing purposes and personal notes!
+
+Please Ignore c:
