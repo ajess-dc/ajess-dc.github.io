@@ -2,7 +2,7 @@ html {
     font-family: sans-serif;
   }
   
-.box {
+.boxdesign {
   margin-left: auto;
   margin-right: auto;
   font-size: 2rem;
@@ -12,7 +12,9 @@ html {
   height: 200px;
   background-color: red;
   color: white;
-  border: 2px red;
+  border: 1px rgb(163, 8, 8);
   border-radius: 25px;
+  text-shadow: 6px 6px 3px rgba(0,0,0, 1);
+  box-shadow: 6px 6px 3px 0 rgba(255, 255, 255, 0.7) inset, -6px -6px 3px 0 rgba(0,0,0, 0.7) inset, 6px 6px 3px 0 rgba(0,0,0, 0.7);
 
 }
