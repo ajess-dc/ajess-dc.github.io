@@ -2,7 +2,7 @@ html {
     font-family: sans-serif;
   }
   
-.coolboxdesign {
+.box {
   margin-left: auto;
   margin-right: auto;
   font-size: 10rem;
@@ -11,6 +11,5 @@ html {
   height: 200px;
   background-color: red;
   color: white;
-
 
 }
