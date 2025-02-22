@@ -92,7 +92,7 @@
     outline: none;
   }
   /*Learnt from: https://www.w3schools.com/cssref/pr_background-image.php */
-  a [href*="external-link-52.png"] {
+  a [href*="#"] {
     background-image: url(external-link-52.png);
     background-position: right;
     background-size: 16px;
@@ -105,6 +105,14 @@
 
   ol {
     list-style: lower-alpha;
+  }
+
+  nav {
+    display: block;
+    font-size: 16px;
+    border: 1px solid #a66;
+    padding: 15px;
+
   }
 
   
