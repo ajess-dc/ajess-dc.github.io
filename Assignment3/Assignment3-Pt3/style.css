@@ -95,10 +95,10 @@
     text-decoration: none;
   }
   /*Learnt from: https://www.w3schools.com/cssref/pr_background-image.php */
-  a[href*="#"]{
+  a[href*="http"]{
     background-image: url(external-link-52.png);
     background-position: bottom 0.5rem right;
-    background-size: 0.8rem;
+    background-size: 1rem;
     background-repeat: no-repeat;
     padding-right: 1rem;
   }
