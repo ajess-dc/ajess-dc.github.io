@@ -78,7 +78,7 @@
     font-weight: 100;
     letter-spacing: 0.5px;
   }
-/*Learned how to do a combinator from: https://www.w3schools.com/CSSref/sel_element_pluss.php */
+
   p {
     text-indent: 20px;
   }
@@ -89,6 +89,22 @@
   }
   a:hover, a:focus {
     color: #a66;
+    outline: none;
+  }
+  /*Learnt from: https://www.w3schools.com/cssref/pr_background-image.php */
+  a [href*="external-link-52.png"] {
+    background-image: url(external-link-52.png);
+    background-position: right;
+    background-size: 16px;
+    padding-right: 15px;
+  }
+
+  ul {
+    list-style: square;
+  }
+
+  ol {
+    list-style: lower-alpha;
   }
 
   
