@@ -95,7 +95,7 @@
     text-decoration: none;
   }
   /*Learnt from: https://www.w3schools.com/cssref/pr_background-image.php */
-  a[href*="#"] {
+  a{
     background-image: url(external-link-52.png) no-repeat 100%;
     background-position: bottom 0.5rem right;
     background-size: 1rem;
