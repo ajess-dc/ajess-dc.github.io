@@ -98,8 +98,9 @@
   a[href*="#"]{
     background-image: url(external-link-52.png);
     background-position: bottom 0.5rem right;
-    background-size: 1rem;
-    padding-right: 1.5rem;
+    background-size: 0.8rem;
+    background-repeat: no-repeat;
+    padding-right: 1rem;
   }
 
   ul {
