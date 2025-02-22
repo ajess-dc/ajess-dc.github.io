@@ -66,6 +66,7 @@
     letter-spacing: 0.5px;
     word-spacing: 0.5px;
     line-height: 30px;
+
   }
 
   h1, h2 {
@@ -94,11 +95,11 @@
     text-decoration: none;
   }
   /*Learnt from: https://www.w3schools.com/cssref/pr_background-image.php */
-  a [href*="#"] {
-    background-image: url(external-link-52.png) no-repeat;
-    background-position: bottom 8px right;
-    background-size: 16px;
-    padding-right: 25px;
+  a[href*="#"] {
+    background-image: url(external-link-52.png) no-repeat 100%;
+    background-position: bottom 0.5rem right;
+    background-size: 1rem;
+    padding-right: 1.5rem;
   }
 
   ul {
@@ -130,8 +131,10 @@
   nav a:hover, nav a:focus{
     color:rgb(141, 79, 79) ;
     border: 1px solid #a66;
-    background: white;
-
   }
 
-
+  nav a:active{
+    background:rgb(141, 79, 79) ;
+    color: white;
+    border: 1px solid #a66;
+  }
