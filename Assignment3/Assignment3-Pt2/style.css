@@ -15,6 +15,6 @@ html {
   border: 1px rgb(163, 8, 8);
   border-radius: 25px;
   text-shadow: 6px 6px 3px rgba(0,0,0, 1);
-  box-shadow: 6px 6px 3px 0 rgba(255, 255, 255, 0.7) inset, -6px -6px 3px 0 rgba(0,0,0, 0.7) inset, 6px 6px 3px 0 rgba(0,0,0, 0.7);
+  box-shadow: 6px 6px 2px 0 rgba(255, 255, 255, 0.7) inset, -5px -5px 3px 0 rgba(0,0,0, 0.5) inset, 6px 6px 3px 0 rgba(0,0,0, 0.7);
 
 }
