@@ -11,30 +11,19 @@ const imgAltText =["Photo of a light blue eye","Abstract dusty grey waves", "Pur
 
 /* Looping through images */
 /* used MDN sources for looping: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration */
-for (let i = 1; i <= imgFileArray.length; i++){
+for (let i = 1; i <= imgFileArray; i++){
+    const image = imgFileArray [i-1];
     const newImage = document.createElement('img');
-    newImage.setAttribute(`src`, `images/${imgFileArray[i]}`);
-    newImage.setAttribute(`alt`, imgAltText[i]);
+    newImage.setAttribute(`src`, `images/${image}`);
+    newImage.setAttribute(`alt`, imgAltText[image]);
     thumbBar.appendChild(newImage);
 }
     newImage.addEventListener("click", (event)=> {
         displayedImage.src = event.target.src;
         displayedImage.alt = event.target.alt;
+
     });
 
 
 /* Wiring up the Darken/Lighten button */
-/*
-btn.addEventListener("click", (event)=>{
-    if (buttonClass === "dark") {
-        btn.setAttribute( `class`, `light`);
-        btn.buttonText = "Lighten";
-        overlay.style.backgroundColor = "rgb(0 0 0 / 50%)"; 
-    }else if (buttonClass === "light") {
-        btn.setAttribute('class', 'dark');
-        btn.buttonText = "Darken";
-        overlay.style.backgroundColor = "rgb(0 0 0 / 0%)"
-    }
-});
 
-*/
