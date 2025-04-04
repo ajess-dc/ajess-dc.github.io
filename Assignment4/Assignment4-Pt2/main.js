@@ -30,11 +30,11 @@ btn.addEventListener("click", (event)=>{
     const buttonClass = btn.getAttribute(`class`);
     if (buttonClass === "dark") {
         btn.setAttribute( `class`, `light`);
-        btn.buttonText = "Lighten";
+        btn.textContent = "Lighten";
         overlay.style.backgroundColor = "rgb(0 0 0 / 50%)"; 
     }else if (buttonClass === "light") {
         btn.setAttribute('class', 'dark');
-        btn.buttonText = "Darken";
+        btn.textContent = "Darken";
         overlay.style.backgroundColor = "rgb(0 0 0 / 0%)"
     }
 });
