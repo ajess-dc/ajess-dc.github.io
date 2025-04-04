@@ -12,18 +12,14 @@ const imgAltText =["Photo of a light blue eye","Abstract dusty grey waves", "Pur
 /* Looping through images */
 /* used MDN sources for looping: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration */
 for (let i = 1; i <= imgFileArray.length; i++){
-    /*const image = imgFileArray [i-1];*/
     const newImage = document.createElement('img');
     newImage.setAttribute(`src`, `images/${imgFileArray[i]}`);
     newImage.setAttribute(`alt`, imgAltText[i]);
     thumbBar.appendChild(newImage);
 }
     newImage.addEventListener("click", (event)=> {
-        const imgSource = event.target.getAttribute(`src`);
-        const imgAlt = event.target.getAttribute(`alt`);
-        displayedImage.setAttribute(`src`, `${imgSource}`);
-        displayedImage.setAttribute(`alt`,`${imgAlt}`);
-
+        displayedImage.src = event.target.src;
+        displayedImage.alt = event.target.alt;
     });
 
 
