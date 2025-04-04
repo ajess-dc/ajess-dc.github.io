@@ -24,6 +24,7 @@ for (let i = 1; i <= imgFileArray.length; i++){
 
 
 /* Wiring up the Darken/Lighten button */
+/*
 btn.addEventListener("click", (event)=>{
     if (buttonClass === "dark") {
         btn.setAttribute( `class`, `light`);
@@ -36,4 +37,4 @@ btn.addEventListener("click", (event)=>{
     }
 });
 
-
+*/
