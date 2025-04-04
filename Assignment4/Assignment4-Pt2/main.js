@@ -17,16 +17,17 @@ for (let i = 1; i <= imgFileArray.length; i++){
     newImage.setAttribute(`src`, `images/${image}`);
     newImage.setAttribute(`alt`, imgAltText[image]);
     thumbBar.appendChild(newImage);
-}
+
     newImage.addEventListener("click", (event)=> {
         displayedImage.src = event.target.src;
         displayedImage.alt = event.target.alt;
 
     });
-
+}
 
 /* Wiring up the Darken/Lighten button */
 btn.addEventListener("click", (event)=>{
+    const buttonClass = btn.getAttribute(`class`);
     if (buttonClass === "dark") {
         btn.setAttribute( `class`, `light`);
         btn.buttonText = "Lighten";
