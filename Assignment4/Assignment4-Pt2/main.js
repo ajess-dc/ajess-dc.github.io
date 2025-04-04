@@ -24,15 +24,16 @@ for (let i = 1; i <= imgFileArray.length; i++){
 
 
 /* Wiring up the Darken/Lighten button */
-button.addEventListener("click", (event)=>{
+btn.addEventListener("click", (event)=>{
     if (buttonClass === "dark") {
-        button.setAttribute( `class`, `light`);
-        button.buttonText = "Lighten";
+        btn.setAttribute( `class`, `light`);
+        btn.buttonText = "Lighten";
         overlay.style.backgroundColor = "rgb(0 0 0 / 50%)"; 
     }else if (buttonClass === "light") {
-        button.setAttribute('class', 'dark');
-        button.buttonText = "Darken";
+        btn.setAttribute('class', 'dark');
+        btn.buttonText = "Darken";
         overlay.style.backgroundColor = "rgb(0 0 0 / 0%)"
     }
 });
+
 
