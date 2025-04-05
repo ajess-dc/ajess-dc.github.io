@@ -37,6 +37,7 @@ class Ball extends Shape {
     super(x, y, velX, velY)
     this.color = color;
     this.size = size;
+    this.exists=true
   }
 
   draw() {
@@ -117,19 +118,19 @@ class EvilCircle extends Shape {
   
   checkBounds() {
     if (this.x + this.size >= width) {
-      this.velX = -Math.abs(this.velX);
+      this.x = -Math.abs(this.x);
     }
 
     if (this.x - this.size <= 0) {
-      this.velX = Math.abs(this.velX);
+      this.x = Math.abs(this.x);
     }
 
     if (this.y + this.size >= height) {
-      this.velY = -Math.abs(this.velY);
+      this.y = -Math.abs(this.y);
     }
 
     if (this.y - this.size <= 0) {
-      this.velY = Math.abs(this.velY);
+      this.y = Math.abs(this.y);
     }
 
   }
@@ -181,22 +182,12 @@ function loop() {
     ball.update();
     ball.collisionDetect();
   }
+  EvilCircle.draw();
+  EvilCircle.checkBounds();
+  EvilCircle.collisionDetect();
 
   requestAnimationFrame(loop);
 }
 
-function loop() {
-
-  for (const ballColor of balls){
-    if (ball.exists) {
-      ball.draw();
-      ball.update();
-      ball.collisionDetect();
-    }
-  }
-  EvilCircle.draw();
-  EvilCircle.checkBounds();
-  EvilCircle.collisionDetect();
-}
 
 loop();
