@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open index.html",
+            "file": "c:\\Users\\aj-wi\\Github-INFT1206\\Github-ajess-dc-Repo\\ajess-dc.github.io\\Assignment4\\Assignment4-Pt4\\index.html"
+        }
+    ]
+}

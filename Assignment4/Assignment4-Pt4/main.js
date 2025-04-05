@@ -145,7 +145,7 @@ class EvilCircle extends Shape {
         if (distance < this.size + ball.size) {
           ball.exists=false;
           ballCount--;
-          paragraph.textContent = 'Ball Count: ' + ballCount;
+          paragraph.textContent = `Ball Count: ${ballCount}`;
         }
       }
     }
@@ -170,7 +170,7 @@ while (balls.length < 25) {
 
   balls.push(ball);
   ballCount++;
-  paragraph.textContent = 'Ball Count: ' + ballCount;
+  paragraph.textContent = `Ball Count: ${ballCount}`;
 }
 
 
