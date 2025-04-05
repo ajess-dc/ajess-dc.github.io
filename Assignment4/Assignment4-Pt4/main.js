@@ -152,6 +152,7 @@ class EvilCircle extends Shape {
   }
 }
 
+
 const balls = [];
 
 while (balls.length < 25) {
@@ -171,6 +172,7 @@ while (balls.length < 25) {
   ballCount++;
   paragraph.textContent = 'Ball Count: ' + ballCount;
 }
+
 
 const newEvilCircle = new EvilCircle(random(0,width), random(0,height));
 function loop() {
