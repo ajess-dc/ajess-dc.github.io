@@ -31,7 +31,7 @@ This file contains Assignment 5 - Part 1- Which focuses on troubleshooting a web
         <li><a href="#">Blog</a></li>
       </ul>
 
-      <form class="search">
+      <form class="search" aria-label="">
         <input type="site-search" name="q" placeholder="Search query" aria-label="Search function for searching the website contents">
         <input type="submit" value="Go!">
       </form>
@@ -52,17 +52,17 @@ This file contains Assignment 5 - Part 1- Which focuses on troubleshooting a web
           <caption>The difference between large and medium bears</caption>
           <thead>
             <tr>
-              <td>Bear Type</td>
-              <td>Coat</td>
-              <td>Adult size</td>
-              <td>Habitat</td>
-              <td>Lifespan</td>
-              <td>Diet</td>
+              <th scope="row">Bear Type</th>
+              <th scope="row">Coat</th>
+              <th scope="row">Adult size</th>
+              <th scope="row">Habitat</th>
+              <th scope="row">Lifespan</th>
+              <th scope="row">Diet</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Wild</td>
+              <th scope="col">Wild</th>
               <td>Brown or black</td>
               <td>1.4 to 2.8 meters</td>
               <td>Woods and forests</td>
@@ -70,7 +70,7 @@ This file contains Assignment 5 - Part 1- Which focuses on troubleshooting a web
               <td>Fish, meat, plants</td>
             </tr>
             <tr>
-              <td>Urban</td>
+              <th scope="col">Urban</th>
               <td>North Face</td>
               <td>18 to 22</td>
               <td>Condos and coffee shops</td>
@@ -102,7 +102,7 @@ This file contains Assignment 5 - Part 1- Which focuses on troubleshooting a web
           <source src="media/bear.ogg" type="audio/ogg" aria-labelledby="Audio File about Bear's Mating">
           <p>It looks like your browser doesn't support HTML5 audio players.</p>
         </audio>
-
+        <p><strong>Transcript:</strong> This isn't really an audio fact file about bears, but it is an audio file you can transcribe.</p>
         <aside>
           <h3>About the author</h3>
           <p>
@@ -117,7 +117,7 @@ This file contains Assignment 5 - Part 1- Which focuses on troubleshooting a web
 
             <h2>Add comment</h2>
 
-            <form class="comment-form">
+            <form class="comment-form" aria-label="Form for user to add a comment">
               <div class="flex-pair">
                 Your name:
                 <input type="text" name="name" id="name" placeholder="Enter your name">
