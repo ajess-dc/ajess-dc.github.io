@@ -45,3 +45,32 @@ function submitComment() {
   nameField.value = '';
   commentField.value = '';
 }
+
+const transcript = document.querySelector(`.transcript`);
+const transcriptButton = document.querySelector(`.transcript-button`);
+const transcriptCon = document.querySelector(`.transcript-container`);
+
+transcript.onclick = () => {
+  if(transcriptButton.textContent === 'Show Transcript') {
+    transcript.style.display = "block";
+    transcript.style.display = 'Hide Transcript';
+  } else {
+    transcript.style.display = "none";
+    transcriptButton.textContent = 'Show transcript';
+  }
+}
+
+const nav = document.querySelector("nav");
+const hamburgerIcon = document.querySelector(".hamburgerIcon")
+const navMenu = document.querySelector("nav ul")
+navMenu.className = "hidden";
+
+hamburgerIcon.onclick = () => {
+  if(navMenu.className === "Hidden") {
+    navMenu.style.visibility = "visibile";
+    navMenu.className ="visible";
+  } else if (navMenu.className === "visible"){
+    navMenu.style.visibility ="hidden";
+    navMenu.className = "hidden";
+  }
+}
